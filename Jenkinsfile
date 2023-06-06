@@ -77,7 +77,7 @@ stages{
                 dir ('pipeline_ex/'){
                 script {
                     try{
-                        sh 'CYPRESS_BASE_URL=localhost:3000 cypress run'
+                        sh 'CYPRESS_BASE_URL=http://localhost:3000 cypress run'
                     }
                     catch(err){
                         println(err)
